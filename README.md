@@ -1,4 +1,4 @@
-# 🎹 Virtual Piano -- [Clique aqui para visitar](https://ntcalii.github.io/Anime_Dex/)
+# 🎹 Virtual Piano -- [Clique aqui para visitar](https://ntcalii.github.io/Piano_Virtual/)
 
 Um piano interativo com 3 oitavas que pode ser tocado via teclado físico ou mouse.
 
