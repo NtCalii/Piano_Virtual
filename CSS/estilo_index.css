@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: #a9b9c5;
+}
+
+/*começo nav*/
+nav{
+    display: flex;
+    flex-flow: wrap row;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #182a42, #1b324e, #182a42);
+    border-bottom: solid 3px #c8d4e2;
+}
+
+.logo{
+    flex: 20%;
+    margin-left: 10%;
+    text-align: left;
+}
+
+.logo h1{
+    font-family: "Lobster", cursive;
+    color: #e6e6e6;
+    font-size: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 20px;
+    padding: 20px 16px;
+    font-size: 25px;
+}
+
+.menu{
+    flex: 60%;
+    margin-right: 10%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a:hover{
+    border-bottom: solid #86b1e6;
+    color: #86b1e6;
+    border-radius: 10px;
+    text-shadow: 3px 2px 2px black;
+}
+
+@keyframes pulsar {
+    from, to{
+        scale: 100%;
+    }
+    50%{
+        scale: 110%;
+    }
+}
+/*fim nav*/
+
+/*começo footer*/
+footer{
+    margin-top: 50px;
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(180deg, #182a42, #1b324e, #182a42);
+    text-align: center;
+    border-top: 3px solid #c8d4e2;
+}
+
+.logo_rodape{
+    font-family: "Lobster", cursive;
+    color: #e6e6e6;
+    font-size: 20px;
+    margin: 10px;
+    padding: 30px;
+}
+
+footer p{
+    color: #e6e6e6;
+    margin: 10px;
+}
+/*fim footer*/
+
+/*começo header*/
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.imagem{
+    text-align: center;
+    margin-right: 10%;
+    flex: 40%;
+    animation: pulsar 2s linear infinite;
+}
+
+.cabeca{
+    flex: 40%;
+    margin-left: 10%;
+}
+
+.cabeca p{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cabeca h2{
+    font-weight: bold;
+    font-size: 40px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
+}
+/*fim header*/
+
+.titulo2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+/*começo section*/
+.piano{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tecla_branca{
+    width: 54px;
+    height: 200px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    border-top: solid rgb(73, 40, 8) 3px;
+    box-shadow: 5px 5px 7px black;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tecla_preta{
+    width: 30px;
+    height: 120px;
+    background: black;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Estilos para estado ativo/pressionado */
+.tecla_branca:active,
+.tecla_branca.active-key {
+    background: #e0e0e0;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tecla_preta:active,
+.tecla_preta.active-key {
+    background: #222;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*1 oitava*/
+.tecla_preta[name="C#2"] { left: 42px; top:40px ;}
+.tecla_preta[name="D#2"] { left: 97px; top:40px ;}
+.tecla_preta[name="F#2"] { left: 204px; top:40px ;}
+.tecla_preta[name="G#2"] { left: 258px; top:40px ;}
+.tecla_preta[name="A#2"] { left: 312px; top:40px ;}
+
+/*2 oitava*/
+.tecla_preta[name="C#3"] { left: 420px; top:40px ;}
+.tecla_preta[name="D#3"] { left: 474px; top:40px ;}
+.tecla_preta[name="F#3"] { left: 582px; top:40px ;}
+.tecla_preta[name="G#3"] { left: 636px; top:40px ;}
+.tecla_preta[name="A#3"] { left: 690px; top:40px ;}
+
+/*3 oitava*/
+.tecla_preta[name="C#4"] { right: 312px; top:40px ;}
+.tecla_preta[name="D#4"] { right: 258px; top:40px ;}
+.tecla_preta[name="F#4"] { right: 150px; top:40px ;}
+.tecla_preta[name="G#4"] { right: 97px; top:40px ;}
+.tecla_preta[name="A#4"] { right: 42px; top:40px ;}
+/*fim section*/
